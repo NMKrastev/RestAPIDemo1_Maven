@@ -1,12 +1,12 @@
-import static io.restassured.RestAssured.*;
 import io.restassured.response.Response;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+
+import static io.restassured.RestAssured.get;
+import static io.restassured.RestAssured.given;
 
 public class APIDemos {
 
-    @Test
-    static public void demoOne() {
+    static public void demoAPIOne() {
 
         Response response = get("https://reqres.in/api/users?page=2");
 
@@ -20,11 +20,11 @@ public class APIDemos {
         Assert.assertEquals(statusCode, 200);
     }
 
-    @Test
-    void demoTwo() {
+    void demoAPITwo() {
         given().
                 get("https://reqres.in/api/users?page=2").
                 then().
                 statusCode(200);
     }
+
 }
