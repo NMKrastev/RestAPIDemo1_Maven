@@ -4,9 +4,9 @@ import org.testng.Assert;
 import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
 
-public class APIDemos {
+public class APIList {
 
-    static public void demoAPIOne() {
+    void APIOne() {
 
         Response response = get("https://reqres.in/api/users?page=2");
 
@@ -20,11 +20,12 @@ public class APIDemos {
         Assert.assertEquals(statusCode, 200);
     }
 
-    void demoAPITwo() {
+    void APITwo() {
         given().
                 get("https://reqres.in/api/users?page=2").
                 then().
                 statusCode(200);
+        System.out.println("Success!");
     }
 
 }
