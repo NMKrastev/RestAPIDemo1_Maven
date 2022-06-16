@@ -16,5 +16,7 @@ public class APIDemos {
         System.out.println("Time taken: " + response.getTime());
         System.out.println("Header: " + response.getHeader("content-type"));
         
+        int statusCode = response.statusCode();
+        Assert.assertEquals(statusCode, 200);
     }
 }
