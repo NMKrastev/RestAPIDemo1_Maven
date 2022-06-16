@@ -6,7 +6,7 @@ import static io.restassured.RestAssured.given;
 
 public class APISingleUser {
 
-    void APISingleUserOne() {
+    void getAPIResponseSingleUserOne() {
 
         Response response = get("https://reqres.in/api/users/2");
 
@@ -21,7 +21,7 @@ public class APISingleUser {
         Assert.assertEquals(statusCode, 200);
     }
 
-    void APISingleUserTwo() {
+    void getAPIResponseSingleUserTwo() {
         given().
                 get("https://reqres.in/api/users?page=2").
                 then().

@@ -5,7 +5,7 @@ import static io.restassured.RestAssured.given;
 
 public class APIList {
 
-    void APIListOne() {
+    void getAPIResponseListOne() {
 
         Response response = get("https://reqres.in/api/users?page=2");
 
@@ -19,7 +19,7 @@ public class APIList {
         Assert.assertEquals(statusCode, 200);
     }
 
-    void APIListTwo() {
+    void getAPIResponseListTwo() {
         given().
                 get("https://reqres.in/api/users?page=2").
                 then().

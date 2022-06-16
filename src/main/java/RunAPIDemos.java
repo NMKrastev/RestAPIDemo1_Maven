@@ -4,9 +4,9 @@ public class RunAPIDemos {
         APIList list = new APIList();
         APISingleUser singleUser = new APISingleUser();
 
-        //list.APIOne();
-        //list.APITwo();
-        singleUser.APISingleUserOne();
-        singleUser.APISingleUserTwo();
+        list.getAPIResponseListOne();
+        list.getAPIResponseListTwo();
+        singleUser.getAPIResponseSingleUserOne();
+        singleUser.getAPIResponseSingleUserTwo();
     }
 }

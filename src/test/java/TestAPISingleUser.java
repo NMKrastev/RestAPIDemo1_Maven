@@ -4,11 +4,11 @@ public class TestAPISingleUser {
     APISingleUser testDemo = new APISingleUser();
     @Test
     void demoOne() {
-        testDemo.APISingleUserOne();
+        testDemo.getAPIResponseSingleUserOne();
     }
 
     @Test
     void demoTwo() {
-        testDemo.APISingleUserTwo();
+        testDemo.getAPIResponseSingleUserTwo();
     }
 }

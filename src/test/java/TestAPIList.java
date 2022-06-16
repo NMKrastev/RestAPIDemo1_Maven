@@ -4,11 +4,11 @@ public class TestAPIList {
     APIList testDemo = new APIList();
     @Test
     void demoOne() {
-        testDemo.APIListOne();
+        testDemo.getAPIResponseListOne();
     }
 
     @Test
     void demoTwo() {
-        testDemo.APIListTwo();
+        testDemo.getAPIResponseListTwo();
     }
 }
