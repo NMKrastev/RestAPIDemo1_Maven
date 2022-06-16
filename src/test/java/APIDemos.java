@@ -19,4 +19,12 @@ public class APIDemos {
         int statusCode = response.statusCode();
         Assert.assertEquals(statusCode, 200);
     }
+
+    @Test
+    void demoTwo() {
+        given().
+                get("https://reqres.in/api/users?page=2").
+                then().
+                statusCode(200);
+    }
 }
