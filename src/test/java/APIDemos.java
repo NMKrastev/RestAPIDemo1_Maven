@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class APIDemos {
 
     @Test
-    void demoOne() {
+    public void demoOne() {
 
         Response response = get("https://reqres.in/api/users?page=2");
 

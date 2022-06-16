@@ -1,10 +1,11 @@
 import org.testng.annotations.Test;
 
-public class TestDemos {
+public class TestAPIDemos {
 
     @Test (priority = 1)
     void setup() {
         System.out.println("I'm inside setup");
+        demoOne();
     }
 
     @Test (priority = 2)
